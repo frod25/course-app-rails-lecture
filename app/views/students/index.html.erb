@@ -1,2 +1,6 @@
 <h1>Students Index</h1>
 
+<% @students.each do |student| %>
+   <h2> <%= link_to(student.name, student_path(student)) %> | <%= student.age %></h2>
+<% end %>
+
